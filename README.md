@@ -1,2 +1,0 @@
-# prospecting-tech
-site
