@@ -122,15 +122,16 @@
 			};
 
 			var url = 'https://app.leadspod.com/register';
-			var jqxhr = $.post(url, data, function(data) {
+			//var jqxhr = $.post(url, data, function(data) {
 				//console.log(data);
-				saveQuestionaireCode();
-			}).always(function(data) {
-				var status = data.status;
+				//saveQuestionaireCode();
+			//}).always(function(data) {
+				//var status = data.status;
 				//console.log(data);
-				saveQuestionaireCode();
+				//saveQuestionaireCode();
 				//alert("Oeps something went wrong please email to hello@leadspod.com to get an account");
-			});
+			//});
+			saveQuestionaireCode();
 		}
 		var saveQuestionaireCode = function() {
 			var post_data = {
@@ -140,7 +141,8 @@
 				'code': $('#code').val(),
 				'choice': $('#answer-result').html() + ' other : ' + readCookie('other')
 			};
-			var url = 'https://script.google.com/macros/s/AKfycby7x0xcd4cXDGQohaJqgngRXBsiI4OXI6Y9XsBFBG1YkiGpmoE/exec';
+			var url = 'https://script.google.com/macros/s/AKfycbw7pknr_DjupYXt_5MKN2Rrtwu82BeEvqE8eiqvXCtTjtynlz4/exec';
+			//var url = 'https://script.google.com/macros/s/AKfycby7x0xcd4cXDGQohaJqgngRXBsiI4OXI6Y9XsBFBG1YkiGpmoE/exec';
 			var jqxhr = $.post(url, post_data, function(post_data) {
 					setTimeout(function() {
 						$('#answer-result').before("<h4 class='text-white'>Thanks for registering! We will contact you shortly with a follow-up!</h4>");
