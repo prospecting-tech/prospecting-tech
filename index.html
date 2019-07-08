@@ -16,14 +16,13 @@
 
     header {
       position: absolute;
-      padding: 5px 15px;
+      padding: 0px;
       width: 100%;
       box-sizing: border-box;
-      background: #fff;
+      _background: #fff;
       z-index: 99;
       display: flex;
       justify-content: center;
-      display: none;
     }
 
     .bgimg-1,
@@ -68,54 +67,106 @@
       font: 20px "Lato", sans-serif;
       color: #111;
     }
+
     a {
-        text-decoration: none;
+      text-decoration: none;
     }
+
     /**menu**/
+    .container {
+      display: inline-block;
+      cursor: pointer;
+      right: 10px;
+      top:10px;
+      position: fixed;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #fff;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {
+      opacity: 0;
+    }
+
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    /**end hamburger**/
+
     ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #111;
+      display: none;
+    }
 
-li {
-  float: left;
-}
+    li {
+      float: left;
+    }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
 
-li a:hover {
-  background-color: #111111;
-}
+    li a:hover {
+      background-color: #333333;
+    }
+
     /**menu**/
   </style>
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+      var menuState = document.querySelector('.menu').style.display;
+      if (menuState == "none" || menuState == "") {
+        document.querySelector('.menu').style.display = "block";
+      } else {
+        document.querySelector('.menu').style.display = "none";
+      }
+    }
+  </script>
 </head>
 
 <body>
 
   <header>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
+    <ul class="menu">
+      <li><a href="enquiry">Resources</a></li>
+      <li><a href="enquiry">Contact</a></li>
     </ul>
+    <div class="container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
   </header>
 
   <div class="bgimg-1">
     <div class="caption">
       <a href="enquiry">
-      <span class="border">PROSPECTING TECH</span><br>
-      <span class="border"><span class="innerborder">by</span> LEADTURK</span>
-    </a>
+        <span class="border">PROSPECTING TECH</span><br>
+        <span class="border"><span class="innerborder">by</span> LEADTURK</span>
+      </a>
     </div>
   </div>
 
