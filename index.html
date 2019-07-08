@@ -14,15 +14,25 @@
       color: #777;
     }
 
+    header {
+      position: absolute;
+      padding: 5px 15px;
+      width: 100%;
+      box-sizing: border-box;
+      background: #fff;
+      z-index: 99;
+      display: flex;
+      justify-content: center;
+      display: none;
+    }
+
     .bgimg-1,
     .bgimg-2,
     .bgimg-3 {
       position: relative;
-      _opacity: 0.65;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-
     }
 
     .bgimg-1 {
@@ -46,29 +56,68 @@
       font-size: 25px;
       letter-spacing: 10px;
     }
+
     .innerborder {
       font-size: 15px;
       letter-spacing: 2px;
     }
+
     h3 {
       letter-spacing: 5px;
       text-transform: uppercase;
       font: 20px "Lato", sans-serif;
       color: #111;
     }
+    a {
+        text-decoration: none;
+    }
+    /**menu**/
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+    /**menu**/
   </style>
 </head>
 
 <body>
 
+  <header>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </header>
+
   <div class="bgimg-1">
     <div class="caption">
+      <a href="enquiry">
       <span class="border">PROSPECTING TECH</span><br>
       <span class="border"><span class="innerborder">by</span> LEADTURK</span>
+    </a>
     </div>
   </div>
-
-  <p style="display:none;padding:5px 15px">This example creates a full page background image. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
 
 </body>
 
