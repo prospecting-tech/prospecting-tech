@@ -34,7 +34,7 @@
 }
 
 .feature-box.feature-box-style-2 .feature-box-icon {
-    right: 10px !important;
+    right: 5px !important;
 }
 @media (max-width: 991px) {
   .owl-section {
