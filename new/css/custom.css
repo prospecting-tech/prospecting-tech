@@ -8,3 +8,7 @@
 	  background-image: url("../img/bg.jpg");
 	  background-size: cover;
 }
+
+.owl-item {
+	padding: 20px;
+}
