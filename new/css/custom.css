@@ -1,0 +1,10 @@
+/* Add here all your CSS customizations */
+
+.slider-container .tp-opacity-overlay {
+	opacity: 0.4;
+}
+
+.slider-container {
+	  background-image: url("../img/bg.jpg");
+	  background-size: cover;
+}
