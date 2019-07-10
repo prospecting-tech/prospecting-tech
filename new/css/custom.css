@@ -33,6 +33,11 @@
 	padding-right: 20px;
 }
 
+.btn-success-overide {
+	background: #28a745 !important;
+	    border-color: #28a745 !important;
+}
+
 .feature-box.feature-box-style-2 .feature-box-icon {
     right: 5px !important;
 }
