@@ -6,10 +6,17 @@
 
 .slider-container {
 	  background-image: url("../img/bg.jpg");
-	  background-position: center;
 	  background-size: cover;
 }
 
 .owl-item {
 	padding: 20px;
+	max-width: 200px;
+}
+
+@media (max-width: 991px) {
+	.owl-item {
+		padding: 20px;
+		max-width: 150px;
+	}
 }
