@@ -1,24 +1,30 @@
 /* Add here all your CSS customizations */
-
 .slider-container .tp-opacity-overlay {
-	opacity: 0.4;
+  opacity: 0.4;
 }
 
 .slider-container {
-	  background-image: url("../img/bg.jpg");
-	  background-position: center !important;
-	  background-size: cover;
+  background-image: url("../img/bg.jpg");
+  background-position: center !important;
+  background-size: cover;
 }
 
 .owl-item {
-	padding: 20px;
-	max-width: 200px;
+  padding: 20px;
+  max-width: 200px;
 }
 
 @media (max-width: 991px) {
-	.owl-section {display: none;}
+  .owl-section {
+    display: none;
+  }
+
+
 }
 
 #header {
-	display: none;
+  display: none;
+}
+.slider-container .tp-opacity-overlay {
+	opacity: 0.2;
 }
