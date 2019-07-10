@@ -16,7 +16,7 @@
 }
 
 @media (max-width: 991px) {
-
+	.owl-section {display: none;}
 }
 
 #header {
