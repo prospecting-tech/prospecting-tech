@@ -32,6 +32,17 @@
 	padding-left: 20px;
 	padding-right: 20px;
 }
+span.word-rotator-words.bg-primary {
+	width: 160px !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle !important;
+	top: -4px;
+}
+span.word-rotator-words.bg-primary > b {
+	padding: 3px !important;
+}
 
 .btn-success-overide {
 	background: #28a745 !important;
